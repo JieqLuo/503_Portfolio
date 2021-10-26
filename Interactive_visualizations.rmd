@@ -1,0 +1,33 @@
+---
+title: "Interactive Visualizations"
+author: "Jieqiao Luo"
+date: "10/25/2021"
+output: html_document
+---
+### How is power usage change over time using a day unit for each plug of each household and how is total power usage for each household?
+These questions can explore the total power usage for each household from data in a certain period time. They can also guide users or customers to dig into one specific plug power usage over time.
+Overall characteristics and specific characteristics for compoents are two main part to analyze data. The interactive graphic shows the total power usage of each household including each plug part through bar chart. The graphic can also be used to show power usage for each function plug in three household at the same time.  
+
+For each line chart, daily power usage for each plug in a certain household is summed. Date is used to as x axis to show time. Daily consumption is used as y axis. Consumption types are shown by different color lines to represent different plug functions. Clicking on different colors in the bar chart, there will be filtered line to be highlighted individually in bar charts. Additionally, when you move mouse to the line in line charts, it will show the specifications including household, date, consumption_type and consumption. Also, a user can choose a period of time in any line chart, there will be total consumption showing in the bar chart for different plug function types.
+
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('altair.html')
+```
+````
+
+
+
+### How is plug power monthly consumption change of each plug part for each household? 
+
+This question mainly including several parts as follows. Firstly, the plot can help each household to know the power usage distribution. Additionally, it can be used to look at the power usage change among different months to give feedback whether power usage is under the schedule of each household.  Moreover, the plot can response the difference of power usage for different parts.
+
+Firstly, each plug power has the same unit so that there is comparison for different parts at home. Secondly, there are same time period data available for comparison. Thirdly, the function categories for plugs are limited so that the plot can be drawn to show comparison. The interaction graphic uses consumption types (function of plugs) as x axis, consumption for y axis, household for colors. There is a cursor you can use to change time periods for the bar plot show. Also, you can choose play button to automatically display how each part consumption change over time.
+
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('plotly.html')
+```
+````
