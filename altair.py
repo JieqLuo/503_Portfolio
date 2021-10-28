@@ -126,6 +126,6 @@ chart=alt.vconcat(
     title="Power Consumption for 3 Households from 2012-06-27 to 2013-01-31"
 )
 
-chart.save('example.html')
+chart.save('altair.html')
 
 #https://altair-viz.github.io/user_guide/interactions.html
