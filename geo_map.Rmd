@@ -1,0 +1,37 @@
+---
+title: "Map Visualization for commodities Imported or Exported among States in American "
+
+output: html_document
+---
+
+
+
+### 1. The map shows the total value of each commodity exported from each state for Fuel oils,Gasoline,Meat/seafood three commodities.
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('map1.html')
+```
+````
+
+For fuel oils, the state of Texas has the largest export values 135600 million dollars among continous states and DC.
+For gasoline, the state of Texas has the largest export values 154700 million dollars among continous states and DC.
+For meat/seafood, the state of California has the largest export values 32300 million dollars among continous states and DC.
+
+
+### 2. The map shows the largest imported commodity into each state in terms of tonnage.
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('map2.html')
+```
+````
+The map shows the state of texas has the largest imported commodities in terms of tonnage, the commodity is gasoline
+
+
+### 3. The map shows the flow of meat/seafood into the state of Virginia by truck.
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('map3.html')
+```
+````
+
+From the map, the state of North Carolina is the largest state which imported meat/seafood into the state of Virginia by truck if not considering the state of Virginia itself.

@@ -9,3 +9,5 @@ navbar:
       href: about.html
     - text: "Interactive Visualizations"
       href: Interactive_visualizations.html
+    - text: "Geospatial data visualization"
+      href: geo_map.html

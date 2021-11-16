@@ -88,7 +88,7 @@ fig = px.bar(df, x="consumption_type", y="consumption", color="household",
                      "consumption": "Consumption (hz*second)",
                      "household": "household"
                  },
-                title="Monthly Consumptions for Plug Types in Each Household from 2021-06-27-2013-01-31")
+                title="Monthly Consumptions for Plug Types in Each Household from 2012-06-27-2013-01-31")
 fig.write_html('plotly.html')
 
 
