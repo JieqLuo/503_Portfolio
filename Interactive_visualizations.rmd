@@ -10,7 +10,6 @@ Overall characteristics and specific characteristics for compoents are two main 
 
 For each line chart, daily power usage for each plug in a certain household is summed. Date is used to as x axis to show time. Daily consumption is used as y axis. Consumption types are shown by different color lines to represent different plug functions. Clicking on different colors in the bar chart, there will be filtered line to be highlighted individually in bar charts. Additionally, when you move mouse to the line in line charts, it will show the specifications including household, date, consumption_type and consumption. Also, a user can choose a period of time in any line chart, there will be total consumption showing in the bar chart for different plug function types.
 
-
 ````{=html}
 ```{r, echo=FALSE, results='asis'}
 xfun::file_string('altair.html')

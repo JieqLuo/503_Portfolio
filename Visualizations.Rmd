@@ -1,0 +1,73 @@
+---
+title: "visualization"
+output: html_document
+---
+
+
+
+
+#### Choropleth Visualization 
+Users could explore demand (order number) distribution, total consumption (unit is $) and unit consumption distribution for each state in Brazil by choosing option in the left top selection box
+
+When users move the mouse to corresponded location in map, the visualization could show the corresponded top product category and specific value, corresponded state. Also, the brighter color represents larger value.
+
+Notice: User need to activate visualization through clicking one of option in the left top selection box otherwise the map will show nothing
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('docs/choropleth.html')
+```
+````
+
+#### Sankey Diagram 
+Users could specify a product category you find in the choropleth visualization; the Sankey diagram will show the corresponded supply and demand flow between states. When users move the mouse to the flow between two states, there will show the original state name, the target state name and the corresponded revenue value. Also, different color mean different parts. The left rectangle part represents the product category. Each center rectangle part represents a supply state and the size represents revenue value where unit is million $. Each right rectangle part represents a demand state and the size represents consumption value where unit is million $. When you move the mouse to a rectangle part, it will show state name, total value, number of input flows and number of output flows. When you move the mouse to flow part between two rectangle parts, it will show source flow, target flow and corresponded value (unit in million $)
+
+User can change product category by clicking options in the left top selection box.
+
+Notice: User need to activate visualization through clicking one of option in the left top selection box otherwise the Sankey diagram will show all product categories and corresponded flows
+
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('docs/sankey_diagram.html')
+```
+````
+ 
+
+
+#### Bar Chart
+Users could explore top revenue sellers for top product category with highest demand in each state. When users move the mouse to a bar, corresponded revenue value and seller id will be shown. Users could change product category with the selection box on the left top.
+
+User can choose a top product category getting from the first visualzation by clicking options from the left top selection box
+
+Notice: User need to activate visualization through clicking one of option in the left top selection box otherwise the bar chart will show all top sellers for all top product categories.
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('docs/Top_seller_id_bar_plot.html')
+```
+````
+
+#### Boxplot
+Users could explore review score distribution for top sellers corresponded to the top product category. Each box plot shows review score distribution for delayed orders and no-delayed orders. When users move the mouse to a box plot, corresponded median value, maximum and minimum value will be shown. Users could change sellers with the selection box on the left top.
+
+Notice: User need to activate visualization through clicking one of option in the left top selection box otherwise the boxplot will show review score distribution for all top product categories.
+
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('docs/Top_seller_review_box_plot.html')
+```
+````
+
+
+
+#### Scatter plot and connected bar plot
+Users could explore mean review score and mean delay time for delivery for top sellers corresponded to the top product category. When users move the mouse to click the scatter point, the corresponded delay time distribution for order delivery will be shown for a specific seller corresponded to the top product category. There are 49 specific colors to represent 49 sellers corresponded to a top product category in the scatter plot.
+For bar plot, x axis represents delay time and y axis means the corresponded count when delay time is a specifc number of days without excedding this number of days. 
+
+````{=html}
+```{r, echo=FALSE, results='asis'}
+xfun::file_string('docs/scatter_barplot.html')
+```
+````

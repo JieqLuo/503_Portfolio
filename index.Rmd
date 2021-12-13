@@ -1,6 +1,17 @@
 ---
-title: "My Website"
+title: "Introduction"
 ---
 
-This Website is used to show my skill for data visualization.
-There are data visualizations and projects shown.
+
+With development of e-commerce, online shopping has become a main way for people to purchase items. 
+There is a lot of data produced every second for online shopping stores. Data analysis has become an important 
+aspect for stores to improve their service and profit without taking much cost compared with the off-line stores. 
+How to utilize data created from internet and what information a store can gain from produced data to improve 
+itself become attractive. For instances, data allows online merchants to learn purchase preferences to improve 
+revenue and customers satisfaction. Data can assist sellers comprehensively know shopping preference for 
+customers and improve service quality for customer. Overall, data help business to achieve win-win between 
+merchants and customers. The project chooses a Brazilian online shopping platform to display how merchants 
+can get benefit from data produced from e-commerce. It includes to analyze data to provide insights for 
+merchants to improve their sales and services. Data visualizations will be created to allow each merchant to 
+learn the real-time trend for the whole market, details for correspond sellers’ business performance for a 
+certain period and feedback from customers.

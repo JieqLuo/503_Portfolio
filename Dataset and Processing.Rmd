@@ -1,0 +1,22 @@
+---
+title: "Dataset and Processing"
+output: html_document
+---
+
+### Description of the data 
+Data Origin: https://www.kaggle.com/olistbr/brazilian-ecommerce
+
+
+There are 9 datasets from Olist, the largest department store in Brazilian marketplaces. They have t 100k orders 
+from 2016 to 2018. Datasets including customer demographics variables (city, state), seller demographics 
+variables (city, state), geolocation information (zip, latitude, attitudes), order items, order payment, reviews 
+(score and comments), order deliver time information (shipping time point, arrival time point), product 
+information (categories, name, description, weight, size, price) will be used to visualized. There are some 
+variables will be created. For instance, delivery time will be created by using shipping time point and arrival 
+time point. Distance between seller and customer will be calculated with latitude and longitude. Delivery 
+efficiency variable will be calculated by weighing delivery delay time. 
+
+Datasets will be joined through using common variables in datasets mainly including ids by using python. Also, 
+mentioned new variables will be created after joining datasets. 
+
+For each visualzation, data processing was done through groupby corresponded columns and sum or count corresponded values.

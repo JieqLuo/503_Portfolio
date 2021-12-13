@@ -1,13 +1,11 @@
 name: "my-website"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Brazil E-commence Market Data Visualization Project"
   left:
-    - text: "Home"
+    - text: "Introduction"
       href: index.html
-    - text: "About"
-      href: about.html
-    - text: "Interactive Visualizations"
-      href: Interactive_visualizations.html
-    - text: "Geospatial data visualization"
-      href: geo_map.html
+    - text: "Dataset and Data Processing"
+      href: Dataset_and_Processing.html
+    - text: "Visualizations"
+      href: Visualizations.html
